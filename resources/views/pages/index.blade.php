@@ -4149,5 +4149,7 @@
         </main>
         <!-- ========== END MAIN CONTENT ========== -->
 
-
+<script>
+    alert("It is from here");
+</script>
 @endsection
