@@ -31,5 +31,14 @@ class indexController extends Controller
         return view('pages.terms');
     }
 
+
+    public function loginPage() {
+        return view('pages.login');
+    }
+
+    public function registerPage() {
+        return view('pages.register');
+    }
+
 }
  
