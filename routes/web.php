@@ -35,3 +35,9 @@ Route::get('/terms', [IndexController::class, 'termsPage']);
 
 // Show Result
 Route::get('/result', [FlightController::class, 'result']);
+
+// Show Login Page
+Route::get('/login', [IndexController::class, 'loginPage']);
+
+// Show Registration Page
+Route::get('/register', [IndexController::class, 'registerPage']);
