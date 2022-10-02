@@ -24,7 +24,51 @@
  <script src="js/components/hs.go-to.js"></script>
  <script src="js/components/hs.slick-carousel.js"></script>
  <script src="js/components/hs.quantity-counter.js"></script>
+ <script>
+   $(function() {
+        $("#flightSubmit").click(function() {
 
+            // getting all inputs needed
+            var firstName = $("input[name=\"flight_firstName\"]").val();
+            var lastName = $("input[name=\"flight_lastName\"]").val();
+            var email = $("input[name=\"flight_email\"]").val();
+            var password = $("input[name=\"flight_password\"]").val();
+            
+            if(firstName == "" || firstName == null || lastName == "" || lastName == null
+            || email == "" || email == null || password == "" || password == null) {
+                $("#response").html(`
+                <div class="col-md-12 mb-4">
+                    <div class="alert alert-danger alert-simple alert-inline">
+                        
+                            Sorry, Please fill in the required fields
+                                <button type="button" class="btn btn-link btn-close">
+                                    <i class="d-icon-times"></i>
+                                </button>
+                    </div>
+                </div>    
+                `); 
+            } else  {
+                $.ajax({
+                    type: "POST",
+                    data: {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    password: password,
+                },
+                url: "",
+                beforeSend: function() {
+
+                },
+                success: function(data) {
+                    console.log(data);
+
+                }
+                    });
+            }
+        });
+   });
+</script>
  <!-- JS Plugins Init. -->
  <script>
      $(window).on('load', function () {

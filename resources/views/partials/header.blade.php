@@ -89,21 +89,6 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-footer p-0">
-                                                    <div class="card-footer__top border-bottom border-color-8 py-3">
-                                                        <div class="text-center mt-2 mb-4 pb-1">
-                                                            <span class="d-block text-gray-1 fontsize-14">or continue with</span>
-                                                        </div>
-                                                        <div class="d-flex mb-3">
-                                                            <a class="btn btn-block btn-sm btn-facebook transition-3d-hover" href="#">
-                                                                <span class="fab fa-facebook-f mr-2"></span>
-                                                                Facebook
-                                                            </a>
-                                                            <a class="btn btn-block btn-sm btn-twitter transition-3d-hover ml-5 mt-0" href="#">
-                                                                <span class="fab fa-twitter mr-2"></span>
-                                                                Twitter
-                                                            </a>
-                                                        </div>
-                                                    </div>
 
                                                     <div class="card-footer__bottom p-4 text-center font-size-14">
                                                         <span class="text-gray-1">Do not have an account?</span>
@@ -121,39 +106,15 @@
                                                 </div>
                                                 <!-- End Header -->
                                                 <div class="card-body pt-5 pb-4">
-                                                    <ul class="nav nav-default nav-pills nav-white nav-justified nav-rounded-pill font-weight-medium px-6 pb-5" role="tablist">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link active" id="pills-one-code-sample-tab" data-toggle="pill" href="#pills-one-code-sample" role="tab" aria-controls="pills-one-code-sample" aria-selected="true">Normal User</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" id="pills-two-code-sample-tab" data-toggle="pill" href="#pills-two-code-sample" role="tab" aria-controls="pills-two-code-sample" aria-selected="false">Partner User</a>
-                                                        </li>
-                                                    </ul>
-
                                                     <div class="tab-content">
                                                         <div class="tab-pane fade active show" id="pills-one-code-sample" role="tabpanel" aria-labelledby="pills-one-code-sample-tab">
-                                                            <!-- Form Group -->
-                                                            <div class="form-group pb-1">
-                                                                <div class="js-form-message js-focus-state border border-width-2 border-color-8 rounded-sm">
-                                                                    <label class="sr-only" for="uname">User Name</label>
-                                                                    <div class="input-group input-group-tranparent input-group-borderless input-group-radiusless">
-                                                                        <input type="text" class="form-control" name="uname" id="uname" placeholder="User Name" aria-label="User Name" aria-describedby="username" required="" data-msg="Please enter a valid user name." data-error-class="u-has-error" data-success-class="u-has-success">
-                                                                        <div class="input-group-append">
-                                                                            <span class="input-group-text" id="username">
-                                                                                <span class="flaticon-user font-size-20"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Form Group -->
 
                                                             <!-- Form Group -->
                                                             <div class="form-group pb-1">
                                                                 <div class="js-form-message js-focus-state border border-width-2 border-color-8 rounded-sm">
-                                                                    <label class="sr-only" for="name">Full Name</label>
+                                                                    <label class="sr-only" for="name">First Name</label>
                                                                     <div class="input-group input-group-tranparent input-group-borderless input-group-radiusless">
-                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Full Name" aria-label="Full Name" aria-describedby="normalname" required="" data-msg="Please enter a valid name." data-error-class="u-has-error" data-success-class="u-has-success">
+                                                                        <input type="text" class="form-control" name="flight_firstName" id="firstName" placeholder="First Name" aria-label="Full Name" aria-describedby="normalname" required="" data-msg="Please enter a valid name." data-error-class="u-has-error" data-success-class="u-has-success">
                                                                         <div class="input-group-append">
                                                                             <span class="input-group-text" id="normalname">
                                                                                 <span class="flaticon-browser-1 font-size-20"></span>
@@ -162,14 +123,30 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <!-- End Form Group -->
+                                                             <!-- End Form Group -->
+                                                            
+                                                             <!-- Form Group -->
+                                                            <div class="form-group pb-1">
+                                                                <div class="js-form-message js-focus-state border border-width-2 border-color-8 rounded-sm">
+                                                                    <label class="sr-only" for="name">Last Name</label>
+                                                                    <div class="input-group input-group-tranparent input-group-borderless input-group-radiusless">
+                                                                        <input type="text" class="form-control" name="flight_lastName" id="firstName" placeholder="Last Name" aria-label="Full Name" aria-describedby="normalname" required="" data-msg="Please enter a valid name." data-error-class="u-has-error" data-success-class="u-has-success">
+                                                                        <div class="input-group-append">
+                                                                            <span class="input-group-text" id="normalname">
+                                                                                <span class="flaticon-browser-1 font-size-20"></span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End Form Group -->                                                           
 
                                                             <!-- Form Group -->
                                                             <div class="form-group pb-1">
                                                                 <div class="js-form-message js-focus-state border border-width-2 border-color-8 rounded-sm">
                                                                     <label class="sr-only" for="signupSrEmail">Email</label>
                                                                     <div class="input-group input-group-tranparent input-group-borderless input-group-radiusless">
-                                                                        <input type="email" class="form-control" name="email" id="signupSrEmail" placeholder="Email" aria-label="Email" aria-describedby="signupEmail" required="" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                                                                        <input type="email" class="form-control" name="flight_email" id="signupSrEmail" placeholder="Email" aria-label="Email" aria-describedby="signupEmail" required="" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
                                                                         <div class="input-group-append">
                                                                             <span class="input-group-text" id="signupEmail">
                                                                                 <span class="far fa-envelope font-size-20"></span>
@@ -185,7 +162,7 @@
                                                                 <div class="js-form-message js-focus-state border border-width-2 border-color-8 rounded-sm">
                                                                     <label class="sr-only" for="signupSrPassword">Password</label>
                                                                     <div class="input-group input-group-tranparent input-group-borderless input-group-radiusless">
-                                                                        <input type="password" class="form-control" name="password" id="signupSrPassword" placeholder="Password" aria-label="Password" aria-describedby="signupPassword" required="" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
+                                                                        <input type="password" class="form-control" name="flight_password" id="signupSrPassword" placeholder="Password" aria-label="Password" aria-describedby="signupPassword" required="" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
                                                                         <div class="input-group-prepend">
                                                                             <span class="input-group-text" id="signupPassword">
                                                                                 <span class="flaticon-password font-size-20"></span>
@@ -194,9 +171,11 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+
+                                                            <div id="response"></div>
                                                             <!-- End Form Group -->
                                                             <div class="mb-3 pb-1">
-                                                                <button type="submit" class="btn btn-md btn-block btn-blue-1 rounded-xs font-weight-bold transition-3d-hover">Register</button>
+                                                                <button type="button" id="flightSubmit" class="btn btn-md btn-block btn-blue-1 rounded-xs font-weight-bold transition-3d-hover">Register</button>
                                                             </div>
                                                             <div class="d-flex justify-content-between mb-1">
                                                                 <div class="custom-control custom-checkbox custom-control-inline">
@@ -287,7 +266,7 @@
                                                             <!-- End Form Group -->
 
                                                             <div class="mb-3 pb-1">
-                                                                <button type="submit" class="btn btn-md btn-block btn-blue-1 rounded-xs font-weight-bold transition-3d-hover">Register</button>
+                                                                <button type="button" id="flightSubmit" class="btn btn-md btn-block btn-blue-1 rounded-xs font-weight-bold transition-3d-hover">Register</button>
                                                             </div>
                                                             <div class="d-flex justify-content-between mb-1">
                                                                 <div class="custom-control custom-checkbox custom-control-inline">
