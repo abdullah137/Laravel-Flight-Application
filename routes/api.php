@@ -23,23 +23,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/test', function() {
-    return response("It is here");
-});
-
 Route::post('/user/register', function(Request $request) {
     
 
     $fields = $request->validate([
         'firstName' => 'required|string',
         'lastName' => 'required|string',
-        'middleName' => 'string',
         'email' => 'required|unique:users,email',
-        'nationality' => 'required|string',
-        'gender' => 'required|string|in:M,F',
-        'dob' => 'required|string',
-        'address' => 'required|string',
-        'phoneNumber' => 'required|string',
         'password' => 'required'
     ]);
 
@@ -64,13 +54,7 @@ Route::post('/user/register', function(Request $request) {
     $user = User::create([
         'firstName' => $firstName,
         'lastName' => $lastName,
-        'middleName' => $middleName,
         'email' => $fields['email'],
-        'phoneNumber' => $fields['phoneNumber'],
-        'nationality' => $fields['nationality'],
-        'gender'  => $fields['gender'] ,
-        'dob'  => $fields['dob'],
-        'address' =>  $fields['address'],
         'password' => bcrypt($fields['password'])
     ]);
 
